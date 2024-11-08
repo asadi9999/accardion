@@ -1,0 +1,91 @@
+.content{
+    width: 500px;
+    height: auto;
+    margin: 25px auto;
+    
+}
+.accordion > div > span{
+    width: 94%;
+    height: 45px;
+    background-color: #eee;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+}
+.accordion > div > span::after{
+    content: "\002b";
+    float: right;
+}
+.accordion > div.show > span::after{
+content: "\2212";
+}
+.accordion span{
+    border-bottom: 1px solid #eee;
+}
+.content > .accordion > div > div{
+    /* width: 100%; */
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: none;
+}
+.accordion > div > span:hover{
+    background-color: #ccc;
+}
+.accordion > div.show > div{
+    display: block;
+    width: 94%;
+}
+.products > span{
+    cursor: pointer;
+    padding: 12px;
+}
+div.products > div.show{
+display: block;
+background-color: #fff;
+border-left: 1px solid#d7d7d7;
+border-right: 1px solid#d7d7d7;
+width: 95%;
+}
+.products ul li{
+    list-style-type: decimal;
+}
+
+/* div.products > div.show::after{
+    content: "\2212";
+} */
+div.products > div{
+    display: none;
+}
+div.products > span{
+    display: block;
+    width: 95%;
+    background-color: #eee;
+}
+div.products > span:hover{
+    background-color: #ddd;
+}
+div.products > span::after{
+    content: "\002b";
+    float: right;
+}
+/* body > div > div:first-child > div > span{
+    border-radius:  0 0 10px 10px;
+} */
+ div:last-child > div > span{
+   
+}
+.accordion > div:last-child > span{
+     border-radius:0 0 10px 10px ;
+}
+.accordion > div:last-child.show > span{
+     border-radius:0 0 ;
+}
+.accordion > div:first-child > span{
+     border-radius: 10px 10px 0 0;
+}
+
+
+
+
